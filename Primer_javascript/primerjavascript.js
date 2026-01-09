@@ -1,0 +1,1 @@
+console.log('hola de nuevo desde un fichero JS')
