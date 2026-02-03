@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.botones button {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.caja {
+    width: 120px;
+    height: 120px;
+    background-color: steelblue;
+    margin-top: 15px;
+}
+
+.cajaRoja {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin-top: 15px;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
