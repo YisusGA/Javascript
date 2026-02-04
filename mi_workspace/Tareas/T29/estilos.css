@@ -1,16 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    justify-items: center;
+    text-align: center;
 }
 
-.botones button {
-    margin-right: 5px;
+.gridbotones {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+    justify-content: center;
 }
 
 .resetbutton {
-    margin-left: 85px;
-    cursor: pointer;
+    grid-column: 2;
 }
 
 .caja {
@@ -32,6 +37,31 @@ body {
     height: 60px;
     background-color: red;
     margin-top: 15px;
+}
+
+.screamer {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    background-image: url("screamer.jpg");
+    background-size: cover;
+}
+
+.maquinaIn {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    background-image: url("maquina.png");
+    background-size: cover;
+}
+
+.athletic {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    background-image: url("athletic.jpg");
+    background-size: contain;
+    background-repeat: no-repeat
 }
 
 #mensaje {
