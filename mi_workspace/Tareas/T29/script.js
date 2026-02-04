@@ -1,3 +1,5 @@
+
+//Variables
 const boton1 = document.getElementById("btn1");
 const boton2 = document.getElementById("btn2");
 const boton3 = document.getElementById("btn3");
@@ -6,12 +8,15 @@ const caja = document.getElementById("caja");
 const texto = document.getElementById("texto");
 const mensaje = document.getElementById("mensaje");
 const titulo = document.getElementById("titulo");
+const help1 = document.getElementById("help");
 
+//Funciones
 function reset() {
     caja.className = ''; //Con esto de aquí, eliminamos cualquier nombre de clase que tenga asociado el objeto
     caja.classList.add("caja");
-    mensaje.textContent = "";
     titulo.textContent = "Práctica de Eventos";
+    help1.textContent = "";
+    texto.value = "";
 }
 
 function cajaRoja() {
@@ -24,18 +29,32 @@ function cajaRojaChiquita() {
     caja.classList.add("cajaRojaChiquita");
 }
 
-function cajaMouse() {
+function screamerIn() {
     caja.className = '';
     caja.classList.add("screamer");
 }
 
-function escudoAthletic() {
+function screamerOut() {
+    caja.className = '';
+    caja.classList.add("caja");
+}
+
+function escudoAthleticIn() {
     caja.className = '';
     caja.classList.add("athletic");
 }
 
+function escudoAthleticOut() {
+    caja.className = '';
+    caja.classList.add("caja");
+}
+
 function displayMessage() {
-    mensaje.textContent = "escribiendo..."; //No funciona
+    mensaje.textContent = "escribiendo...";
+}
+
+function hideMessage() {
+    mensaje.textContent = "";
 }
 
 function maquinaIn() {
@@ -49,18 +68,29 @@ function maquinaOut() {
 }
 
 function cambiarTitulo() {
-    titulo.textContent = "¿A qué mola mi página web? Pulsa tecla arriba para resetear esto"
+    titulo.textContent = "¿A qué mola mi página web?"
 }
 
+function restaurarTitulo() {
+    titulo.textContent = "Práctica de Eventos"
+}
+
+function help() {
+    help1.style.whiteSpace = "pre-line";
+    help1.textContent = "Puedes dar click o doble click a Caja Roja\nPuedes dejar pulsado el botón Athletic\nPuedes pasar el ratón por encima de la caja\nPrueba a hacer click dentro y fuera del cuadro de texto\nPuedes escribir en el cuadro de texto\nPuedes resetear todo con el botón de Reset";
+}
+
+//Eventos
 boton1.addEventListener("click", cajaRoja);
 boton1.addEventListener("dblclick", cajaRojaChiquita);
 reset1.addEventListener("click", reset);
-caja.addEventListener("mouseover", cajaMouse);
-caja.addEventListener("mouseout", reset);
-boton2.addEventListener("mousedown", escudoAthletic);
-boton2.addEventListener("mouseup", reset);
-//texto.addEventListener("input", displayMessage);
-texto.addEventListener("focus", maquinaIn);
-texto.addEventListener("blur", reset);
+caja.addEventListener("mouseover", screamerIn);
+caja.addEventListener("mouseout", screamerOut);
+boton2.addEventListener("mousedown", escudoAthleticIn);
+boton2.addEventListener("mouseup", escudoAthleticOut);
+texto.addEventListener("input", maquinaIn);
+texto.addEventListener("focus", cambiarTitulo);
+texto.addEventListener("blur", restaurarTitulo);
 texto.addEventListener("keydown", displayMessage);
-texto.addEventListener("keyup", reset);
+texto.addEventListener("keyup", hideMessage);
+boton3.addEventListener("click", help);
