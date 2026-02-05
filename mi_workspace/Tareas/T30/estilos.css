@@ -1,0 +1,13 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
+    background-color: beige;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
