@@ -12,7 +12,10 @@ const correo = document.getElementById("email");
 const condiciones = document.getElementById("condiciones");
 
 //Lista de botones radio
-const tipoUsuario = document.getElementsByName("tipo");
+
+const tipoUsuario = document.getElementsByName("tipo"); // getElementsByName() devuelve una NodeList (LinkedList) de 
+                                                       // todos los elementos de un HTML que tienen el mismo valor para
+                                                       // el atributo nombre. Luego podemos iterar sobre esa NodeList
 const checkboxProfesor = document.getElementById("profesor");
 const checkboxAlumno = document.getElementById("alumno");
 
@@ -57,10 +60,10 @@ function validarFormulario(event) {
         mensaje.textContent = "Todos los campos son obligatorios";
         mensaje.classList.add("error");
     } else {
-        let radioSelected = ""; //Importante que sea let, porque tenemos que reasignar la variable dentro del if
-        for (let i = 0; i < tipoUsuario.length; i++) {
+        let radioSelected = ""; //Variable de tipo String para almacenar el valor del radio button que se ha seleccionado. Importante que sea let, porque tenemos que reasignar la variable dentro del if
+        for (let i = 0; i < tipoUsuario.length; i++) { //Aquí iteramos sobre la NodeList que creamos a partir de los elementos radio del HTML
             if (tipoUsuario[i].checked) {
-                radioSelected = tipoUsuario[i].value;
+                radioSelected = tipoUsuario[i].value; //Y si se cumple que algún elemento de la NodeList está seleccionado (checked), asignamos su valor a la variable radioSelected
             }
         }
         mensaje.classList.add("correcto");
