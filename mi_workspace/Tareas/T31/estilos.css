@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#resultado {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.campoActivo {
+    border: 5px solid blue;
+}
+
+.error {
+    color: red;
+}
+
+.correcto {
+    color: green;
+}
