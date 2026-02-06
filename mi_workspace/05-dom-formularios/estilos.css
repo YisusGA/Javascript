@@ -12,7 +12,7 @@ body {
 }
 
 .campo-activo {
-    border: 2px solid steelblue;
+    border: 5px solid steelblue;
 }
 
 .error {

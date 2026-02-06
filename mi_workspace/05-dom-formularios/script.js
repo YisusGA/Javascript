@@ -16,14 +16,30 @@ const mensaje = document.getElementById("mensaje");
 
 //FUNCIONES
 
-// Función para evento focus
-function campoActivo() {
+// Funciones para evento focus
+function campoActivoNombre() {
     nombre.classList.add("campo-activo");
 }
 
-// Función para evento blur
-function campoInactivo() {
+function campoActivoEmail() {
+    email.classList.add("campo-activo");
+}
+
+// Funciones para evento blur
+function campoInactivoNombre() {
     nombre.classList.remove("campo-activo");
+    if(nombre.value === "") {
+        mensaje.textContent = "El campo de nombre está vacío";
+        mensaje.className = "error"; //Esta es la forma de asignar una clase cuando no tiene atributo clase
+    }
+}
+
+function campoInactivoEmail() {
+    email.classList.remove("campo-activo");
+    if(email.value === "") {
+        mensaje.textContent = "El campo de email está vacío";
+        mensaje.className = "error";
+    }
 }
 
 //Función para evento mouseover
@@ -34,6 +50,7 @@ function overForm() {
 //Función para evento mouseout
 function outForm() {
     mensaje.textContent = "Raton sale del formulario";
+    mensaje.className = "";
 }
 
 //Función para evento Submit
@@ -52,12 +69,12 @@ function validarFormulario(event) {
 //EVENTOS
 
 // Evento focus
-nombre.addEventListener("focus", campoActivo);
-email.addEventListener("focus", campoActivo);
+nombre.addEventListener("focus", campoActivoNombre);
+email.addEventListener("focus", campoActivoEmail);
 
 // Evento blur
-nombre.addEventListener("blur", campoInactivo);
-email.addEventListener("blur", campoInactivo);
+nombre.addEventListener("blur", campoInactivoNombre);
+email.addEventListener("blur", campoInactivoEmail);
 
 // Evento Ratón pasa por encima del formulario
 formulario.addEventListener("mouseover", overForm);
