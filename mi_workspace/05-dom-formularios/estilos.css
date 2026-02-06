@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    color: blue;
+    padding: 20px;
+}
+
+.mi-formulario {
+    background-color: aqua;
+    border: 2px solid blueviolet;
+    padding: 20px;
+    width: 300px;
+}
+
+.campo-activo {
+    border: 2px solid steelblue;
+}
+
+.error {
+    color: red;
+}
+
+.correcto {
+    color: green;
+}
