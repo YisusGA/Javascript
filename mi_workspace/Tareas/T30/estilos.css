@@ -11,3 +11,8 @@ body {
     margin-top: 15px;
     font-weight: bold;
 }
+
+.lista {
+    display: grid;
+    grid-template-columns: 90% 10%; /* El 90% es para el texto de la tarea, y el 10% para la X de eliminar tarea */
+}
