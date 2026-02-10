@@ -1,5 +1,7 @@
 
-//Definición de variables
+//Definición de variables: las agrupamos por tipos: formulario, campos de texto, listas de selección, checkbox, botón fuera del formulario
+//Lo ideal es poner nombres descriptivos del tipo de elemento del HTML que es y un nombre identificativo, usando camelCase. Por ejemplo,
+//txtNombre indica que se refiere a un input de texto y que es donde el usuario mete el nombre
 const formPractica = document.getElementById("formulario");
 
 const txtNombre = document.getElementById("nombre");
