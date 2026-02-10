@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f9;
+}
+
+.contenedor {
+  width: min(920px, 92vw);
+  padding: 16px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.sub {
+  margin: 0 0 18px;
+  color: #444;
+}
+
+/* FLEX */
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 260px; /* crece/encoge y base */
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input, select {
+  padding: 10px 12px;
+  border: 1px solid #cfd6dd;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #7aa7ff;
+}
+
+.campo-check {
+  flex: 1 1 100%;
+}
+
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 100%;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.btn {
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-principal {
+  background: #2d6cdf;
+  color: white;
+}
+
+.btn-secundario {
+  background: #e9eef6;
+}

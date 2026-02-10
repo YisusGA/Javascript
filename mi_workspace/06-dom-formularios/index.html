@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario del Estudiante</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <div class="tarjeta">
+      <h1>Formulario del Estudiante</h1>
+      <p class="sub">Rellena tus datos (sin inventarte el email, que se nota).</p>
+
+      <form id="formulario" class="form-flex">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Miguel" required />
+        </div>
+
+        <div class="campo">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Ej: Pérez García" required />
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+        </div>
+
+        <div class="campo">
+          <label for="curso">Curso</label>
+          <select id="curso" name="curso" required>
+            <option value="" selected disabled>Elige un curso</option>
+            <option value="1º ESO">1º ESO</option>
+            <option value="2º ESO">2º ESO</option>
+            <option value="3º ESO">3º ESO</option>
+            <option value="4º ESO">4º ESO</option>
+            <option value="1º Bachillerato">1º Bachillerato</option>
+            <option value="2º Bachillerato">2º Bachillerato</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="turno">Turno</label>
+          <select id="turno" name="turno" required>
+            <option value="" selected disabled>Elige un turno</option>
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+          </select>
+        </div>
+
+        <div class="campo campo-check">
+          <label class="check">
+            <input type="checkbox" id="acepto" name="acepto" />
+            Acepto las normas del aula (sí, esas que nadie lee)
+          </label>
+        </div>
+
+        <div class="botones">
+          <button type="submit" class="btn btn-principal">Enviar</button>
+          <button type="reset" class="btn btn-secundario" id="btnLimpiar">Limpiar</button>
+        </div>
+      </form>
+    </div>
+
+          <button type="button" id="comprueba" >Comprueba campo-check</button>
+
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
