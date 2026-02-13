@@ -1,4 +1,5 @@
 
+/* Esto aún no está completado */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -12,7 +13,9 @@ body {
     font-weight: bold;
 }
 
+/* 
 .lista {
     display: grid;
-    grid-template-columns: 90% 10%; /* El 90% es para el texto de la tarea, y el 10% para la X de eliminar tarea */
-}
+    grid-template-columns: 90% 10%; /* El 90% es para el texto de la tarea, y el 10% para la X de eliminar tarea
+}  
+    */
