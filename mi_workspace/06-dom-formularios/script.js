@@ -58,5 +58,5 @@ function validarDatosFormulario(event) {
 
 btnComprueba.addEventListener("click", compruebaAceptacionNormas);
 
-//No hace falta una 
+//No hace falta una varible para el botón Submit, pues hemos almacenado el formulario completo en una variable, y eso hace posible usar la delegación de eventos, pudiendo así usar como evento submit, que viene del botón submit de formulario
 formPractica.addEventListener("submit", validarDatosFormulario);

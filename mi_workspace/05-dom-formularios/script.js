@@ -82,4 +82,5 @@ formulario.addEventListener("mouseover", overForm);
 formulario.addEventListener("mouseout", outForm);
 
 // Evento submit
+//No hace falta una varible para el botón Submit, pues hemos almacenado el formulario completo en una variable, y eso hace posible usar la delegación de eventos, pudiendo así usar como evento submit, que viene del botón submit de formulario
 formulario.addEventListener("submit", validarFormulario);
