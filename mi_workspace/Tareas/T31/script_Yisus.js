@@ -15,7 +15,7 @@ const condiciones = document.getElementById("condiciones");
 
 const tipoUsuario = document.getElementsByName("tipo"); // getElementsByName() devuelve una NodeList (LinkedList) de 
                                                        // todos los elementos de un HTML que tienen el mismo valor para
-                                                       // el atributo nombre. Luego podemos iterar sobre esa NodeList
+                                                       // el atributo nombre. Luego podemos iterar sobre esa NodeList. Es más sencilla la solución de Miguel Ángel, mirarla. Pero su versión no tiene validación de entrada 
 const checkboxProfesor = document.getElementById("profesor");
 const checkboxAlumno = document.getElementById("alumno");
 
