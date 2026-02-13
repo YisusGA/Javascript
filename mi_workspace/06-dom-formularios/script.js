@@ -21,7 +21,7 @@ const btnComprueba = document.getElementById("comprueba");
 function compruebaAceptacionNormas() {
     //Esta función comprueba si el checkbox de normas está o no marcado
     let mensaje = "";
-    if (checkAcepto.checked === true) {
+    if (checkAcepto.checked) {
         mensaje = "Normas aceptadas";
     } else {
         mensaje = "Normas no aceptadas";
@@ -50,7 +50,7 @@ function validarDatosFormulario(event) {
     - Nombre: ${txtNombre.value}
     - Apellidos: ${txtApellidos.value}
     - email: ${txtEmail.value}
-    - Acepta Normas: ${checkAcepto.checked} ? SI : NO` //Revisar esto
+    - Acepta Normas: ${checkAcepto.checked ? "SI" : "NO"}` // Importante esto
 
     alert(mensaje);
     
