@@ -29,4 +29,34 @@ function compruebaAceptacionNormas() {
     alert(mensaje);
 }
 
+//ESTO NO HACE FALTA PORQUE EL HTML YA CUMPLE LA FUNCIÓN DE COMPROBAR QUE NO SE QUEDA NINGÚN CAMPO VACÍO, con el Required en el input
+//Si quisiéramos que funcionara esta función de comprobación, tendríamos que quitar el required de los elementos input del html 
+
+//function validarDatosFormulario(event) {
+    // Esta función valida los datos del formulario de entrada de alumnos
+    //event.preventDefault();
+    //if(txtNombre.value="") {
+        //alert("No se ha introducido el nombre");
+        //return;
+    //}
+//}
+
+function validarDatosFormulario(event) {
+    // Esta función valida los datos del formulario de entrada de alumnos
+    event.preventDefault();
+
+    let mensaje;
+    mensaje = `Datos del estudiante:
+    - Nombre: ${txtNombre.value}
+    - Apellidos: ${txtApellidos.value}
+    - email: ${txtEmail.value}
+    - Acepta Normas: ${checkAcepto.checked} ? SI : NO` //Revisar esto
+
+    alert(mensaje);
+    
+}
+
 btnComprueba.addEventListener("click", compruebaAceptacionNormas);
+
+//No hace falta una 
+formPractica.addEventListener("submit", validarDatosFormulario);
