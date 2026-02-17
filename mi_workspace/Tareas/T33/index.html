@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alta Cliente Gimnasio</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <div class="tarjeta">
+      <h1>Alta de Cliente – Gimnasio</h1>
+      <p class="sub">Rellena los datos. El monitor no es adivino.</p>
+
+      <form id="formGym" class="grid-form">
+        <!-- Datos personales -->
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required />
+        </div>
+
+
+
+
+        <!-- Datos físicos -->
+        <div class="campo">
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" step="0.1" required />
+        </div>
+
+        <div class="campo">
+          <label for="altura">Altura (cm)</label>
+          <input type="number" id="altura" required />
+        </div>
+
+        <!-- Selects -->
+        <div class="campo">
+          <label for="objetivo">Objetivo</label>
+          <select id="objetivo" required>
+            <option value="" disabled selected>Selecciona</option>
+            <option value="Perder peso">Perder peso</option>
+            <option value="Ganar músculo">Ganar músculo</option>
+            <option value="Mantener forma">Mantener forma</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="plan">Tipo de plan</label>
+          <select id="plan" required>
+            <option value="" disabled selected>Selecciona</option>
+            <option value="Mensual">Mensual</option>
+            <option value="Trimestral">Trimestral</option>
+            <option value="Anual">Anual</option>
+          </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="campo campo-full">
+          <label class="check">
+            <input type="checkbox" id="acepta" />
+            Acepto las normas del gimnasio (sí, las que nadie lee)
+          </label>
+        </div>
+
+        <!-- Botón -->
+        <div class="acciones campo-full">
+          <button type="submit" class="btn btn-principal">Dar de alta</button>
+          <button type="reset" class="btn btn-principal">Reset</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

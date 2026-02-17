@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f4f6f9;
+}
+
+.contenedor {
+  width: min(980px, 92vw);
+  padding: 16px;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+h1 { margin: 0 0 6px; font-size: 1.6rem; }
+.sub { margin: 0 0 16px; color: #444; }
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.campo { display: grid; gap: 6px; }
+label { font-weight: 600; font-size: 0.95rem; }
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #cfd6dd;
+  border-radius: 10px;
+  outline: none;
+  text-transform: lowercase;
+}
+
+input:focus { border-color: #7aa7ff; }
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-principal { background: #2d6cdf; color: #fff; }
+.btn-secundario { background: #e9eef6; }
+
+.msg { grid-column: 1 / -1; margin: 0; min-height: 1.2em; }
+.msg.ok { color: #156a1a; font-weight: 600; }
+.msg.err { color: #b00020; font-weight: 600; }
+
+.tablero {
+  width: min(520px, 92vw);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #222;
+}
+
+.casilla {
+  display: grid;
+  place-items: center;
+  font-size: clamp(22px, 4vw, 38px);
+  user-select: none;
+}
+
+.blanca { background: #f0d9b5; }
+.negra { background: #b58863; }
+
+.casilla[data-highlight="true"] {
+  outline: 3px solid rgba(45,108,223,.65);
+  outline-offset: -3px;
+}
+
+.nota { margin: 10px 0 0; color: #444; }
+
+@media (max-width: 720px) {
+  .panel { grid-template-columns: 1fr 1fr; }
+  .acciones { grid-column: 1 / -1; justify-content: stretch; }
+  .acciones .btn { flex: 1; }
+}
