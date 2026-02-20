@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Eventos con botones</title>
+    <title>Gestor de Tareas</title>
     <link rel="stylesheet" href="estilos.css">
-    <meta name = "author" content = "Jesús Gómez Alonso">
 </head>
-
 <body>
 
-    <h1 id="titulo">Gestor de Tareas</h1>
+    <h1>Gestor de Tareas</h1>
 
-    <div id="add">
-        <input type="text" id="texto" placeholder="Escribe una tarea">
-        <button id="addButton">Añadir tarea</button>
+    <div class="contenedor">
+        <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+        <button id="addBtn">Añadir tarea</button>
     </div>
 
     <p id="mensaje"></p>
 
-    <div class="lista" id="lista">
-        <!--Aquí vamos añadiendo divs con append en el script-->
-    </div>   
+    <ul id="lista"></ul>
 
-    <script src="script_Profe.js"></script>
-
-    <!--Jesús Gómez Alonso. Lenguaje de marcas. 1º DAM. 2026-->
+    <script src="script.js"></script>
 </body>
-
 </html>

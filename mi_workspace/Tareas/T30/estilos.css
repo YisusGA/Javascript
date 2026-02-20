@@ -1,21 +1,55 @@
-
-/* Esto aún no está completado */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
     padding: 20px;
-    justify-items: center;
-    text-align: center;
-    background-color: beige;
+}
+
+h1 {
+    color: #333;
+}
+
+.contenedor {
+    margin-bottom: 10px;
+}
+
+#tareaInput {
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 #mensaje {
-    margin-top: 15px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-/* 
-.lista {
-    display: grid;
-    grid-template-columns: 90% 10%; /* El 90% es para el texto de la tarea, y el 10% para la X de eliminar tarea
-}  
-    */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}

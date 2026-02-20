@@ -31,7 +31,7 @@ function validarDatosFormulario(event) {
     event.preventDefault();
 
     let mensaje = `
-    -Nombre: ${txtNombre.value}
+    -Nombre: ${txtNombre.nombre.value}
     -Apellidos: ${txtApellidos.value}
     -DNI/Pasaporte: ${txtDni.value}
     -Teléfono: ${telTelefono.value}

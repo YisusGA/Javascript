@@ -1,10 +1,14 @@
-const input = document.getElementById("texto");
-const boton = document.getElementById("addButton");
-const lista = document.getElementById("lista");
+// DEFINICIÓN DE VARIABLES
+
+const inputTarea = document.getElementById("tareaInput");
+const botonAdd = document.getElementById("addBtn");
+const listaTareas = document.getElementById("lista");
 const mensaje = document.getElementById("mensaje");
 
+// DEFINICIÓN DE FUNCIONES
+
 function añadirTarea() {
-    const texto = input.value.trim();
+    const texto = inputTarea.value.trim();
 
     if (texto === "") {
         mensaje.textContent = "No puedes añadir una tarea vacía. El cerebro aún no carga.";
@@ -18,29 +22,31 @@ function añadirTarea() {
     btnEliminar.textContent = "❌";
 
     li.appendChild(btnEliminar);
-    lista.appendChild(li);
+    listaTareas.appendChild(li);
 
     mensaje.textContent = "Tarea añadida correctamente.";
-    input.value = "";
+    inputTarea.value = "";
 }
 
+// CONTROL DE EVENTOS
+
 // Click en botón
-boton.addEventListener("click", añadirTarea);
+botonAdd.addEventListener("click", añadirTarea);
 
 // Eventos de teclado
-input.addEventListener("keydown", (event) => {
+inputTarea.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         añadirTarea();
     }
 
     if (event.key === "Escape") {
-        input.value = "";
+        inputTarea.value = "";
         mensaje.textContent = "Input limpiado. Respira y vuelve.";
     }
 });
 
 // Delegación de eventos
-lista.addEventListener("click", (event) => {
+listaTareas.addEventListener("click", (event) => {
 
     if (event.target.tagName === "BUTTON") {
         event.target.parentElement.remove();
