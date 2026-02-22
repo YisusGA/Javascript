@@ -29,7 +29,7 @@ function calcularTotal(event) {
         //el toFixed(2) hace que se muestre el número sólo con 2 decimales
         txtResultado.textContent = "Sí podemos irnos de viaje y nos sobran " + totalViaje.toFixed(2) + " euros";
     } else {
-        txtResultado.textContent = "No podemos irnos de viaje y nos sobran " + totalViaje.toFixed(2) + " euros";
+        txtResultado.textContent = "No podemos irnos de viaje, pues nos faltan " + Math.abs(totalViaje.toFixed(2)) + " euros";
     }
 }
 
