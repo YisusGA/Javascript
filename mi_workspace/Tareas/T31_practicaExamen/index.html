@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario DOM completo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form id="formulario">
+
+        <label>
+            Nombre:
+            <input type="text" id="nombre" required>
+        </label>
+        <br><br>
+
+        <label>
+            Email:
+            <input type="email" id="email" required>
+        </label>
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="condiciones">
+            Acepto las condiciones
+        </label>
+        <br><br>
+
+        <p>Tipo de usuario:</p>
+        <label>
+            <input type="radio" name="tipo" value="Alumno" id="alumno">
+            Alumno
+        </label><br>
+
+        <label>
+            <input type="radio" name="tipo" value="Profesor" id="profesor">
+            Profesor
+        </label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset" id="reset">Reset</button>
+    </form>
+
+    <h2>Datos introducidos</h2>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+    <!-- <script src="script_Profe.js"></script> -->
+</body>
+
+</html>
