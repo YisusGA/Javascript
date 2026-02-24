@@ -16,7 +16,7 @@ function calcularResultado(event) {
 
     const selectOperacion = document.getElementById("operacion").value;
 
-    let resultado = 0;
+    let resultado = 0; // Importante que esto sea let, para poder reasignar su valor
 
     switch(selectOperacion) {
         case "sumar":
