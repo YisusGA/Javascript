@@ -30,6 +30,8 @@ function calcularTotal(event) {
         txtResultado.textContent = "Sí podemos irnos de viaje y nos sobran " + totalViaje.toFixed(2) + " euros";
     } else {
         txtResultado.textContent = "No podemos irnos de viaje, pues nos faltan " + Math.abs(totalViaje.toFixed(2)) + " euros";
+        // Al ser esto un div, no se puede seleccionar como se ve debajo
+        // formViaje.resultado.textContent = "No podemos irnos de viaje, pues nos faltan " + Math.abs(totalViaje.toFixed(2)) + " euros";
     }
 }
 

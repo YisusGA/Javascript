@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Alta en Agencia de Viajes ✈️</h1>
+
+        <form id="formulario">
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Destino:</label>
+            <input type="text" id="destino" required>
+
+            <h2>¿Podemos ir de viaje?</h2>
+
+            <label>Presupuesto inicial (€):</label>
+            <input type="number" id="presupuesto" min="0" step="0.01">
+
+            <h2>Gastos </h2>
+
+            <label>Dinero para hotel (€):</label>
+            <input type="number" id="hotel" min="0" step="0.01">
+
+            <label>Dinero para transporte (€):</label>
+            <input type="number" id="transporte" min="0" step="0.01">
+
+            <label>Otros gastos (€):</label>
+            <input type="number" id="otros" min="0" step="0.01">
+
+            <h2>RESULTADO</h2>
+
+            <label>Si o no y el dinero que me sobra o me falta:</label>
+
+            <div id="resultado"></div>
+
+            <button type="submit" class="button-calcular"> Calcular total</button>
+            <button type="reset" class="button-reset"> Reset</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
