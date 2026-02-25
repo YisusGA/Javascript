@@ -76,8 +76,17 @@ function restaurarTitulo() {
 }
 
 function help() {
-    help1.style.whiteSpace = "pre-line";
-    help1.textContent = "Puedes dar click o doble click a Caja Roja\nPuedes dejar pulsado el botón Athletic\nPuedes pasar el ratón por encima de la caja\nPrueba a hacer click dentro y fuera del cuadro de texto\nPuedes escribir en el cuadro de texto\nPuedes resetear todo con el botón de Reset";
+    // Primera forma de meter saltos de línea 
+    //help1.style.whiteSpace = "pre-line";
+    //help1.textContent = "Puedes dar click o doble click a Caja Roja\nPuedes dejar pulsado el botón Athletic\nPuedes pasar el ratón por encima de la caja\nPrueba a hacer click dentro y fuera del cuadro de texto\nPuedes escribir en el cuadro de texto\nPuedes resetear todo con el botón de Reset";
+
+    // Segunda forma de meter saltos de línea, bastante más sencilla, pues se escribe con un formato más natural 
+    help1.textContent = `
+    Puedes dar click o doble click a Caja Roja
+    Puedes dejar pulsado el botón Athletic
+    Puedes pasar el ratón por encima de la caja
+    Prueba a hacer click dentro y fuera del cuadro de texto
+    Puedes escribir en el cuadro de texto\nPuedes resetear todo con el botón de Reset`;
 }
 
 //Eventos
