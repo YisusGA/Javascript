@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <title>Formulario de Registro</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Jesús Gómez Alonso">
+ <meta name="copyright" content="Jesús Gómez Alonso 2025">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <h1>Formulario de Registro de Ciudadanos</h1>
+ <p>
+  <form action="#" method="post">
+   <label for="name">Nombre completo:</label><br>
+   <input type="text" id="name" name="name" minlength="5" maxlength="15" required><br><br>
+   <label for="zonas">Zonas de City DAM:</label><br>
+   <select id="zonas" name="zonas" required>
+    <option value="">Selecciona una opción...</option>
+    <option value="neurotech">Zona NeuroTech</option>
+    <option value="biosfera">Biosfera Verde</option>    
+    <option value="quantum">Distrito Quantum</option>
+   </select>
+  <br><br>
+  <b>Seleccione sus intereses ciudadanos:</b><br>
+   <input type="checkbox" id="movilidad" name="intereses[]" value="movilidad">
+   <label for="movilidad">Movilidad Autónoma</label><br>
+   <input type="checkbox" id="energia" name="intereses[]" value="energia">
+   <label for="energia">Energia Renovable</label><br>
+   <input type="checkbox" id="robotica" name="intereses[]" value="robotica">
+   <label for="robotica">Robótica y automatización</label><br>
+   <br><br>
+    <label for="comment">Comentario:</label><br>
+    <textarea id="comment" name="comment" cols="40" rows="5" placeholder="Cuéntanos tu visión del futuro..."></textarea>
+   <br><br>
+    <input type="submit" value="Registrarse en City DAM"> <input type="reset" value="Borrar">
+  </form>
+ </p>
+</body>
+<!-- Jesús Gómez Alonso 2025 -->
+</html>

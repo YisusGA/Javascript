@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solicitud de acceso — Informático (Ciberseguridad)</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Solicitud de acceso</h1>
+    <p>Puesto: <strong>Informático</strong> · Empresa: <strong>Desarrollo de aplicaciones de ciberseguridad</strong></p>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>Datos que debe rellenar el candidato</h2>
+
+      <form id="solicitudForm" novalidate>
+        <!-- 4 inputs de texto -->
+
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Ej. Miguel" autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="apellidos">Apelllidos</label>
+          <input id="apellidos" name="apellidos" type="text" placeholder="Ej. Miguel" autocomplete="name" />
+        </div>
+
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" placeholder="ej. miguel@email.com" autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="experiencia">Años de experiencia</label>
+          <input id="experiencia" name="experiencia" type="text" placeholder="Ej. 3" inputmode="numeric" />
+        </div>
+
+        <!-- 2 selects -->
+        <div class="field">
+          <label for="area">Área principal</label>
+          <select id="area" name="area">
+            <option value="" selected disabled>Selecciona un área…</option>
+            <option value="Desarrollo Javascript">Desarrollo Javascript</option>
+            <option value="Programación iOS/Android">Programación iOS/Android</option>
+            <option value="Pentesting">Pentesting</option>
+            <option value="SOC / Blue Team">SOC / Blue Team</option>
+            <option value="DevSecOps">DevSecOps</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="disponibilidad">Disponibilidad</label>
+          <select id="disponibilidad" name="disponibilidad">
+            <option value="" selected disabled>Selecciona una opción…</option>
+            <option value="Inmediata">Inmediata</option>
+            <option value="2 semanas">En 2 semanas</option>
+            <option value="1 mes">En 1 mes</option>
+            <option value="A convenir">A convenir</option>
+          </select>
+        </div>
+
+        <!-- 2 checks -->
+        <div class="field">
+          <legend>Confirmaciones</legend>
+
+          <label class="check">
+            <input id="legal" name="legal" type="checkbox" />
+            Confirmo que los datos son veraces
+          </label>
+
+          <label class="check">
+            <input id="rgpd" name="rgpd" type="checkbox" />
+            Acepto el tratamiento de datos (RGPD)
+          </label>
+
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="primary">Enviar solicitud</button>
+          <button type="reset" class="primary">Reset</button>
+
+        </div>
+
+      </form>
+    </section>
+
+    <section class="card">
+       <!-- Visualización de datos introducidos  -->
+        
+      <h2>Visualización de datos</h2>
+
+      <div id="previsualizacion" class="preview empty">
+
+        <p>Aquí aparecerán los datos cuando envíes el formulario.</p>
+
+      </div>
+    </section>
+    
+<section class="card">
+  <!-- Calculadora -->
+  <h2>Calculadora</h2>
+
+  <div id="calculadora" class="preview">
+
+    <div class="field">
+      <label>Número A</label>
+      <input type="text" id="numA" placeholder="Introduce número A">
+
+      <label>Número B</label>
+      <input type="text" id="numB" placeholder="Introduce número B">
+    </div>
+
+    <div class="actions" >
+      <button type="button" id="btnSuma">Suma</button>
+      <button type="button" id="btnResta">Resta</button>
+      <button type="button" id="btnMultiplica">Multiplica</button>
+    </div>
+
+    <p id="resultadoCalc"><strong>Resultado:</strong> —</p>
+
+  </div>
+</section>
+
+
+
+
+</main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

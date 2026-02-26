@@ -1,0 +1,105 @@
+body {
+text-align: center;
+width: 50%;
+margin: auto;
+}
+.caja {
+letter-spacing: 15px;
+word-spacing: 15px;
+margin: auto;
+padding: 2px;
+margin-top: 5px;
+height: 100px;
+border-radius: 15px;
+font-size: 25px;
+}
+.lineal {
+font-family: Arial, sans-serif;
+color: white;
+background: linear-gradient(to right, red, green);
+}
+.radial {
+font-family: Calibri, sans-serif;
+color: red;
+background: radial-gradient(circle, green 0%, white 50%, blue 100%);
+border: 1px solid red;
+}
+.conica {
+font-family: Courier, sans-serif;
+color: blue;
+background: conic-gradient(green 0%, orange 100%);
+border: 1px solid purple;
+}
+.parrafo {
+font-family: Arial, sans-serif;
+font-size: 18px;
+background-color: green;
+}
+.rojo {
+color: red;
+}
+.blanco {
+color: white;
+}
+.azul {
+color: blue;
+}
+.amarillo {
+color: yellow;
+}
+img { 
+width: 200px;
+height: 100px;
+object-fit: cover;
+object-position: center;
+}
+.grayscale{
+filter: grayscale(100%);
+border: 1px solid black;
+}
+.blur{
+filter: blur(4px);
+}
+.invert{
+filter: invert(100%);
+}
+.saturate{
+filter: saturate(300%);
+border: 1px solid darkblue;
+}
+
+.tipo-letra {
+font-family: Arial, sans-serif;
+font-size: 50px;
+height: 50px; 
+margin: auto;
+}
+.subrayado {
+background-color: darkblue;
+color: yellow;
+text-decoration-line: underline;
+text-decoration-color: yellow;
+padding: 10px;
+}
+.tachado {
+color: darkblue;
+text-decoration-line: line-through;
+text-decoration-color: darkblue;
+padding: 10px;
+}
+.doble-linea {
+background-color: red;
+color: yellow;
+text-decoration-line: underline overline;
+text-decoration-style: double;
+text-decoration-color: yellow;
+padding: 10px;
+}
+.wavy {
+background-color: green;
+color: white;
+text-decoration-line: underline;
+text-decoration-style: wavy;
+text-decoration-color: white;
+padding: 10px;
+}
