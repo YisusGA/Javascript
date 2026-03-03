@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Cabecera */
+.top {
+  background: #1f3a5f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.top h1 {
+  margin: 0 0 5px;
+}
+
+/* Layout MÁS ESTRECHO */
+.layout {
+  max-width: 520px;   /* ← antes 900px */
+  margin: 20px auto;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Campos */
+.field {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checks */
+.checks {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.check {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Botones */
+.actions {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #dcdcdc;
+}
+
+.primary {
+  background: #2e6da4;
+  color: white;
+  border-color: #2e6da4;
+}
+
+.primary:hover {
+  background: #245580;
+}
+
+/* Mensajes */
+.msg {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.msg.ok {
+  color: green;
+}
+
+.msg.bad {
+  color: red;
+}
+
+/* Vista previa */
+.preview {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.kv {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.kv:last-child {
+  border-bottom: none;
+}
+
+.k {
+  font-size: 13px;
+  color: #666;
+}
+
+.v {
+  font-weight: bold;
+}
+
+/* Pie */
+.foot {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  padding: 10px;
+}
