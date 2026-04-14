@@ -1,0 +1,8 @@
+ul {
+  display: inline-block; /* La lista solo ocupa el ancho de su contenido */
+  text-align: left;      /* Alinea el texto a la izquierda dentro de la lista */
+}
+
+body {
+  text-align: center;    /* Esto centrará el bloque 'inline-block' de la lista */
+}
