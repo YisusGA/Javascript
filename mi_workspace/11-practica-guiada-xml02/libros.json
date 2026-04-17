@@ -1,0 +1,62 @@
+{
+  "biblioteca": {
+    "libros": [
+      {
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez",
+        "editorial": "Sudamericana",
+        "anio": 1967,
+        "paginas": 471,
+        "tematica": "Realismo mágico"
+      },
+      {
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "editorial": "Francisco de Robles",
+        "anio": 1605,
+        "paginas": 863,
+        "tematica": "Aventuras"
+      },
+      {
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez",
+        "editorial": "Sudamericana",
+        "anio": 1967,
+        "paginas": 471,
+        "tematica": "Realismo mágico"
+      },
+      {
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "editorial": "Francisco de Robles",
+        "anio": 1605,
+        "paginas": 863,
+        "tematica": "Aventuras"
+      },
+      {
+        "titulo": "El principito",
+        "autor": "Antoine de Saint-Exupéry",
+        "editorial": "Reynal & Hitchcock",
+        "anio": 1943,
+        "paginas": 96,
+        "tematica": "Fábula"
+      },
+      {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "editorial": "Secker & Warburg",
+        "anio": 1949,
+        "paginas": 328,
+        "tematica": "Distopía"
+      },
+      {
+        "titulo": "La sombra del viento",
+        "autor": "Carlos Ruiz Zafón",
+        "editorial": "Planeta",
+        "anio": 2001,
+        "paginas": 576,
+        "tematica": "Misterio"
+      }
+    ]
+  }
+}

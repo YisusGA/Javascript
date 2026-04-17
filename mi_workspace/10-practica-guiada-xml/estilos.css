@@ -1,0 +1,18 @@
+persona {
+    display: block;
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 10px;
+}
+nombre {
+    display: block;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+calle {
+    display: block;
+    color: red;
+    font-size: 25px;
+}
