@@ -18,7 +18,7 @@ function parsearXML(str) {
 function mostrarLibros(xmlDoc) {
     // Insertamos el título en el HTML
     document.getElementById("titulo").textContent="Biblioteca";
-    // getElementsByTagNamedevuelve una colección con todos los elementos que tienen ese nombre dentro del
+    // getElementsByTagName devuelve una colección con todos los elementos que tienen ese nombre dentro del
     // documento xmlDoc
     let libros= xmlDoc.getElementsByTagName("libro");
     // Variable donde construiremos el HTML
@@ -26,22 +26,28 @@ function mostrarLibros(xmlDoc) {
     // Recorremos todos los libros
     for(let i=0; i <libros.length; i++) {
         // Extraemos datos del libro
-        let titulo= libros[i].querySelector("titulo").textContent; //añadir resto de campos
+        let titulo = libros[i].querySelector("titulo").textContent;
+        let autor = libros[i].querySelector("autor").textContent;
+        let editorial = libros[i].querySelector("editorial").textContent;
+        let anio = libros[i].querySelector("anio").textContent;
+        let paginas = libros[i].querySelector("paginas").textContent;
+        let tematica = libros[i].querySelector("tematica").textContent;
         // Construimos el HTML del libro
         lista+=`
             <li>
                 <strong>${titulo}</strong><br>
                 Autor: ${autor}<br>
                 Editorial: ${editorial}<br>
+                Año: ${anio}<br>
+                Páginas: ${paginas}<br>
+                Tematica: ${tematica}<br>
             </li>
             <hr>
         `;
     }
     // Insertamos el resultado en la página
-    document.getElementById("libros").innerHTML=lista;
+    document.getElementById("libros").innerHTML = lista;
 }
 
 fetch("libros.xml")
-.then(obtenerTexto)
-.then(parsearXML)
-.then(mostrarLibros);
+.then(obtenerTexto).then(parsearXML).then(mostrarLibros);
