@@ -1,0 +1,38 @@
+/* Estilo general de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f4f8fb;
+  color: #333;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #1b4f72;
+  margin-bottom: 30px;
+}
+
+/* Lista principal */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cada paciente */
+li {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+/* Línea horizontal */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}

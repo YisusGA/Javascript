@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laura Gómez",
+    "edad": 34,
+    "telefono": "600123456",
+    "prueba": "Glucosa",
+    "resultado": 118,
+    "unidad": "mg/dL"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Ruiz",
+    "edad": 47,
+    "telefono": "611987654",
+    "prueba": "Triglicéridos",
+    "resultado": 210,
+    "unidad": "mg/dL"
+  },
+  {
+    "id": 3,
+    "nombre": "Ana Martín",
+    "edad": 29,
+    "telefono": "622345678",
+    "prueba": "Hierro",
+    "resultado": 42,
+    "unidad": "µg/dL"
+  }
+]
