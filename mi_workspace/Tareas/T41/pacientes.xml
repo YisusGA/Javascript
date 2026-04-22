@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital>
+    <nombreHospital>Hospital Central</nombreHospital>
+    <ciudad>Bilbao</ciudad>
+    <pacientes>
+        <paciente>
+            <nombre>Juan Pérez</nombre>
+            <edad>45</edad>
+            <diagnostico>Gripe</diagnostico>
+        </paciente>
+        <paciente>
+            <nombre>Ana López</nombre>
+            <edad>30</edad>
+            <diagnostico>Fractura</diagnostico>
+        </paciente>
+        <paciente>
+            <nombre>Carlos Ruiz</nombre>
+            <edad>60</edad>
+            <diagnostico>Hipertensión</diagnostico>
+        </paciente>
+        <paciente>
+            <nombre>Laura Gómez</nombre>
+            <edad>27</edad>
+            <diagnostico>Migraña</diagnostico>
+        </paciente>
+        <paciente>
+            <nombre>Pedro Sánchez</nombre>
+            <edad>52</edad>
+            <diagnostico>Diabetes</diagnostico>
+        </paciente>
+    </pacientes>
+</hospital>

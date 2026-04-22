@@ -1,4 +1,7 @@
 // Llamada inicial para cargar el JSON
+// Esto se considera programación asíncrona, pues el programa no se queda bloqueado esperando.
+//  Aunque en este caso, los métodos están sincronizados entre sí, pues el siguiente método no
+//  se lanza hasta que no termina el anterior 
 fetch("datos.json")
 .then(obtenerTexto) // Paso 1: convertir a texto
 .then(parsearJSON) // Paso 2: convertir a objeto JavaScript
@@ -12,9 +15,9 @@ function obtenerTexto(response) {
 // Convierte el texto en JSON
 function parsearJSON(str) {
     // Convertimos el texto en un array de objetos JavaScript
-    let datos =JSON.parse(str);
+    let datos = JSON.parse(str);
     // Devolvemos el JSON ya parseado
-    return datos
+    return datos;
 }
 
 // Muestra los pacientes en la web
@@ -42,8 +45,7 @@ function mostrarPacientes(datos) {
             Edad: ${edad}<br>
             Teléfono: ${telefono}<br>
             Prueba: ${prueba}<br>
-            Resultado: ${resultado}<br>
-            Unidad: ${unidad}<br>
+            Resultado: ${resultado}  ${unidad}<br>
         </li>
         <hr>
         `;
