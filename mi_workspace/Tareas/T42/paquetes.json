@@ -1,0 +1,44 @@
+[
+{
+    "id": 1,
+    "remitente": "Laura Gómez",
+    "destinatario": "Carlos Ruiz",
+    "dirección": {
+        "calle": "Mayor",
+        "numero": 15,
+        "ciudad": "Madrid"
+    },
+    "telefono": 600123456,
+    "peso": 2.5,
+    "unidad": "kg",
+    "estado": "Entregado"
+},
+{
+    "id": 2,
+    "remitente": "Ana Martín",
+    "destinatario": "Pedro López",
+    "dirección": {
+        "calle": "Avenida Andalucía",
+        "numero": 22,
+        "ciudad": "Sevilla"
+    },
+    "telefono": 611987654,
+    "peso": 1.2,
+    "unidad": "kg",
+    "estado": "En reparto"
+},
+{
+    "id": 3,
+    "remitente": "Miguel Santos",
+    "destinatario": "Lucía Fernández",
+    "dirección": {
+        "calle": "Plaza España",
+        "numero": 8,
+        "ciudad": "Valencia"
+    },
+    "telefono": 622345678,
+    "peso": 4.8,
+    "unidad": "kg",
+    "estado": "Pendiente"
+}
+]
