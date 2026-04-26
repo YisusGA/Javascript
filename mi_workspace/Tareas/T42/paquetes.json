@@ -3,7 +3,7 @@
     "id": 1,
     "remitente": "Laura Gómez",
     "destinatario": "Carlos Ruiz",
-    "dirección": {
+    "direccion": {
         "calle": "Mayor",
         "numero": 15,
         "ciudad": "Madrid"
@@ -17,7 +17,7 @@
     "id": 2,
     "remitente": "Ana Martín",
     "destinatario": "Pedro López",
-    "dirección": {
+    "direccion": {
         "calle": "Avenida Andalucía",
         "numero": 22,
         "ciudad": "Sevilla"
@@ -31,7 +31,7 @@
     "id": 3,
     "remitente": "Miguel Santos",
     "destinatario": "Lucía Fernández",
-    "dirección": {
+    "direccion": {
         "calle": "Plaza España",
         "numero": 8,
         "ciudad": "Valencia"

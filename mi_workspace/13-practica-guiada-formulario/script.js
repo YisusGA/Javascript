@@ -1,8 +1,8 @@
 // Obtenemos el formulario
-let formulario = document.getElementById("formularioPaquete");
+let document = document.getElementById("formularioPaquete");
 
 // Añadimos el evento submit al formulario
-formulario.addEventListener("submit", enviarFormulario);
+document.addEventListener("submit", enviarFormulario);
 
 function enviarFormulario(event) {
     event.preventDefault();
@@ -47,7 +47,7 @@ function enviarFormulario(event) {
 // Convierte la respuesta en JSON
 // -----------------------------
 function obtenerRespuestaJSON(response) {
-    return response.json()
+    return response.json();
 }
 
 // -----------------------------
@@ -59,5 +59,6 @@ function obtenerRespuestaJSON(response) {
 function mostrarRespuesta(datos) {
     console.log("Respuesta del servidor:");
     console.log(datos);
+    document.getElementById("salidaJSON").textContent = datos.stringify;
     alert("Datos enviados correctamente");
 }
