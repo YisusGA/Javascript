@@ -30,8 +30,6 @@ function enviarFormulario(event) {
 
     // Convertimos el objeto JavaScript a JSON
     let cocheJSON = JSON.stringify(coche, null, 2);
-    // Mostramos los datos JSON que vamos a mandar al servidor
-    document.getElementById("salidaJSON").textContent = cocheJSON;
 
     // Enviamos el JSON al servidor
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -47,14 +45,32 @@ function enviarFormulario(event) {
 
 // Función para obtener una respuesta del servidor y convertirla a JSON
 function obtenerRespuestaJSON(respuesta) {
-    return respuesta.json();
+    return JSON.parse(respuesta); // Esto es equivalente a: return respuesta.json();
+     
+// Lo que se recibe como respuesta del servidor es un objeto Response,
+// que contiene metadatos: si la conexión fue exitosa (status 200 o 201),
+// las cabeceras, etc. Este servidor funciona como un espejo, que nos devuelve
+// el texto que nosotros mandamos, pero añadiendo más cosas.
+// Y convertimos a objeto JavaScript esa respuesta en formato JSON que
+// nos mandó el servidor, usando el método .json() sobre esa respuesta
 }
 
-// Función para mostrar la respuesta del servidor
+// Función para mostrar la respuesta recibida del servidor, y que hemos convertido en objeto JavaScript
 function mostrarRespuesta(datos) {
     console.log("Respuesta del servidor:");
     console.log(datos);
-    alert("Datos enviados correctamente");
+    // Mostramos los elementos que nos interesan de la respuesta que nos dio el servidor y que convertimos a objeto JS
+    document.getElementById("salidaJSON").textContent = `
+        marca: ${datos.marca}
+        Modelo: ${datos.modelo}
+        Año: ${datos.anio}
+        Kilómetros: ${datos.kilometros}
+        Combustible: ${datos.combustible}
+        Precio: ${datos.precio}
+        Vendedor: ${datos.vendedor}
+        Telefono: ${datos.telefono}
+        ID añadido por el servidor: ${datos.id}
+    `;
 }
 
 // Capturar el evento submit del formulario para ejecutar la función enviarFormulario()
