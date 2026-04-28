@@ -59,7 +59,7 @@ function obtenerRespuestaJSON(respuesta) {
 function mostrarRespuesta(datos) {
     console.log("Respuesta del servidor:");
     console.log(datos);
-    // Mostramos los elementos que nos interesan de la respuesta que nos dio el servidor y que convertimos a objeto JS
+    // Mostramos en pantalla los elementos que nos interesan de la respuesta que nos dio el servidor y que convertimos a objeto JS
     document.getElementById("salidaJSON").textContent = `
         marca: ${datos.marca}
         Modelo: ${datos.modelo}

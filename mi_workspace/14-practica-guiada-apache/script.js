@@ -1,12 +1,11 @@
 // Obtenemos el formulario
-let document = document.getElementById("formularioPaquete");
+let formPaquete = document.getElementById("formularioPaquete");
 
-// Añadimos el evento submit al formulario
-document.addEventListener("submit", enviarFormulario);
-
+// Función para recoger y enviar los datos
 function enviarFormulario(event) {
     event.preventDefault();
-    // Recogemos los valores escritos en el formulario
+
+    // Recogemos los datos
     let txtRemitente=document.getElementById("remitente").value
     let txtDestinatario=document.getElementById("destinatario").value
     let txtDireccion=document.getElementById("direccion").value
@@ -29,10 +28,8 @@ function enviarFormulario(event) {
     // Mostramos el JSON generado en pantalla
     document.getElementById("salidaJSON").textContent = paqueteJSON;
 
-    // Enviamos el JSON al servidor. Este es un servidor que nos
-    // proporciona JSON para pruebas. Aquí podría ir la dirección 
-    // del servidor que yo quisiiera
-    fetch("https://jsonplaceholder.typicode.com/posts", {
+    // Enviamos el JSON al servidor
+    fetch("recibir_paquete.php", {
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -43,21 +40,16 @@ function enviarFormulario(event) {
     .then(mostrarRespuesta);
 }
 
-// -----------------------------
-// Convierte la respuesta en JSON
-// -----------------------------
+// Obtenemos la respuesta del servidor
 function obtenerRespuestaJSON(response) {
-    return response.json();
+    return response;
 }
 
-// -----------------------------
-// Muestra la respuesta del servidor
-// -----------------------------
-// El argumento datos lo podría llamar como quisiera,
-// porque realmente es lo que le pasa el then anterior
-// de la cadena
 function mostrarRespuesta(datos) {
     console.log("Respuesta del servidor:");
     console.log(datos);
     alert("Datos enviados correctamente");
 }
+
+// Añadir el evento
+formPaquete.addEventListener("submit", enviarFormulario);

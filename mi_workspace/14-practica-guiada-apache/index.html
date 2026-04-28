@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar formulario en JSON</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Título principal -->
+  <h1>Registro de envío de paquetes</h1>
+
+  <!-- 
+    Formulario para recoger los datos del paquete.
+    Cada campo tiene un id para poder acceder a él desde JavaScript.
+  -->
+  <form id="formularioPaquete">
+    
+    <label for="remitente">Remitente:</label>
+    <input type="text" id="remitente" required>
+
+    <label for="destinatario">Destinatario:</label>
+    <input type="text" id="destinatario" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" required>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" step="0.1" required>
+
+    <label for="estado">Estado:</label>
+    <select id="estado" required>
+      <option value="">Selecciona un estado</option>
+      <option value="Pendiente">Pendiente</option>
+      <option value="En almacén">En almacén</option>
+      <option value="En reparto">En reparto</option>
+      <option value="Entregado">Entregado</option>
+    </select>
+
+    <button type="submit">Enviar datos</button>
+  </form>
+
+  <!-- 
+    Zona para mostrar el JSON generado antes de enviarlo.
+    Esto ayuda mucho a nivel didáctico.
+  -->
+  <h2>JSON generado</h2>
+  <pre id="salidaJSON"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
