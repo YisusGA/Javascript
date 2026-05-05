@@ -42,7 +42,7 @@ function enviarFormulario(event) {
 
 // Obtenemos la respuesta del servidor
 function obtenerRespuestaJSON(response) {
-    return response;
+    return response.json();
 }
 
 function mostrarRespuesta(datos) {
