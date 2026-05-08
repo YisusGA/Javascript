@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiesta de despedida del curso</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Inscripción a la fiesta de despedida</h1>
+  <p>Rellena el formulario para apuntarte a la fiesta de fin de curso.</p>
+
+  <form id="formularioFiesta">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" required>
+
+    <label for="curso">Curso:</label>
+    <select id="curso" required>
+      <option value="">Selecciona un curso</option>
+      <option value="1º DAW">1º DAW</option>
+      <option value="1º DAM">1º DAM</option>
+      <option value="1º ASIR">1º ASIR</option>    </select>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+
+    <label for="acompanantes">Número de acompañantes:</label>
+    <input type="number" id="acompanantes" min="0" max="5" required>
+
+    <label for="menu">Tipo de menú:</label>
+    <select id="menu" required>
+      <option value="">Selecciona un menú</option>
+      <option value="Normal">Normal</option>
+      <option value="Vegetariano">Vegetariano</option>
+      <option value="Vegano">Vegano</option>
+      <option value="Sin gluten">Sin gluten</option>
+    </select>
+
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" rows="4"></textarea>
+
+    <button type="submit">Enviar inscripción</button>
+  </form>
+  <button id="btnMostrar">Mostrar invitados</button>
+
+  <h2>JSON generado</h2>
+  <pre id="salidaJSON"></pre>
+  <h2>Invitados a la fiesta</h2>
+  <pre id="listaInvitados">
+    <ul></ul>
+  </pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
