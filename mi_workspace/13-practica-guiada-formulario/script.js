@@ -44,10 +44,10 @@ function enviarFormulario(event) {
 }
 
 // -----------------------------
-// Convierte la respuesta en JSON
+// Convierte la respuesta en objeto JavaScript
 // -----------------------------
 function obtenerRespuestaJSON(response) {
-    return response.json();
+    return response.json(); // Esto está parseando la respuesta, de JSON a Objeto JavaScript
 }
 
 // -----------------------------
@@ -58,6 +58,6 @@ function obtenerRespuestaJSON(response) {
 // de la cadena
 function mostrarRespuesta(datos) {
     console.log("Respuesta del servidor:");
-    console.log(datos);
+    console.log(datos); // Mostramos por consola el objeto JavaScript que parseamos antes
     alert("Datos enviados correctamente");
 }

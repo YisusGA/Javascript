@@ -53,11 +53,16 @@ function mostrarRespuesta(response) {
 function mostrarInvitados() {
     fetch("datos.json")
     .then(obtenerInvitados)
+    .then(parsearJSON)
     .then(addInvitados);
 }
 
 function obtenerInvitados(response) {
-    return response.json();
+    return response.text();
+}
+
+function parsearJSON(str) {
+    return str.json();
 }
 
 function addInvitados(datos) {
