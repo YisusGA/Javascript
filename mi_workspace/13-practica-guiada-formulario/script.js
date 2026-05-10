@@ -1,8 +1,8 @@
 // Obtenemos el formulario
-let document = document.getElementById("formularioPaquete");
+let form = document.getElementById("formularioPaquete");
 
 // Añadimos el evento submit al formulario
-document.addEventListener("submit", enviarFormulario);
+form.addEventListener("submit", enviarFormulario);
 
 function enviarFormulario(event) {
     event.preventDefault();

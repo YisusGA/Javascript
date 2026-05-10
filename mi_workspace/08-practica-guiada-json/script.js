@@ -1,6 +1,9 @@
 // Esta es la práctica de utilización de JSON
 
 // Creo un objeto JSON. Acordarse de que no podemos poner comentarios en el objeto JSON, pues JSON no admite comentarios
+// Aunque las propiedades (futuras claves del JSON) tienen dobles comillas (como requiere JSON), aún es un objeto JavaScript.
+// Será un objeto JSON cuando se serialice (se convierta a texto plano). También podríamos crear el objeto JavaScript sin las
+// comillas en las propiedades, y luego al serializarlo, ya se añadirán, además de convertirse a texto plano
 
 let persona = {
     "nombre": "Jesús Gómez Alonso",
@@ -19,10 +22,17 @@ let amigos = [
 
 ]
 
-// Visualizamos el objeto
+// Visualizamos el objeto persona
 console.log(persona);
 console.log(JSON.stringify(persona));
 
+// Incorporamos el objeto amigos dentro del objeto persona
+persona.amigos = amigos;
+// Y lo volvemos a visualizar
+console.log(persona);
+console.log(JSON.stringify(persona));
+
+// Visualizamos el objeto amigos
 console.log(amigos);
 console.log(JSON.stringify(amigos));
 

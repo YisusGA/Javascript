@@ -61,7 +61,7 @@ function mostrarRespuesta(datos) {
     console.log(datos);
     // Mostramos en pantalla los elementos que nos interesan de la respuesta que nos dio el servidor y que convertimos a objeto JS
     document.getElementById("salidaJSON").textContent = `
-        marca: ${datos.marca}
+        Marca: ${datos.marca}
         Modelo: ${datos.modelo}
         Año: ${datos.anio}
         Kilómetros: ${datos.kilometros}
