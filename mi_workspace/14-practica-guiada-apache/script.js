@@ -40,9 +40,18 @@ function enviarFormulario(event) {
     .then(mostrarRespuesta);
 }
 
-// Obtenemos la respuesta del servidor
+// Obtenemos la respuesta del servidor y la parseamos
 function obtenerRespuestaJSON(response) {
-    return response.json();
+    return response.json(); // Esto está parseando la respuesta, de JSON a Objeto JavaScript. 
+                           // En este caso, debe parsearse así y no con JSON.parse(response), 
+                           // porque .json() es un método asíncrono de un objeto Response que 
+                           // espera a recibir el flujo de datos completo y luego lo parsea usando 
+                           // JSON.parse(). JSON.parse() en cambio es un método síncrono
+                           // del objeto JSON, y debería usarse sólo para parsear unos datos que
+                           // estemos seguros que ya tenemos (como los almacenados dentro de una
+                           // variable). Cuidado: no podemos usar el método .json() para parsear otra
+                           // cosa que no sea un objeto Response, pues el método .json() pertenece 
+                           // al objeto Response.
 }
 
 function mostrarRespuesta(datos) {
