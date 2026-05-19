@@ -1,0 +1,123 @@
+<liga>
+
+  <equipo>
+    <nombre>Athletic Club</nombre>
+    <ciudad>Bilbao</ciudad>
+    <puntos>99</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Real Madrid</nombre>
+    <ciudad>Madrid</ciudad>
+    <puntos>84</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Barcelona</nombre>
+    <ciudad>Barcelona</ciudad>
+    <puntos>81</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Atlético de Madrid</nombre>
+    <ciudad>Madrid</ciudad>
+    <puntos>76</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Villarreal</nombre>
+    <ciudad>Villarreal</ciudad>
+    <puntos>70</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Betis</nombre>
+    <ciudad>Sevilla</ciudad>
+    <puntos>65</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Sevilla</nombre>
+    <ciudad>Sevilla</ciudad>
+    <puntos>60</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Valencia</nombre>
+    <ciudad>Valencia</ciudad>
+    <puntos>58</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Real Sociedad</nombre>
+    <ciudad>San Sebastián</ciudad>
+    <puntos>57</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Osasuna</nombre>
+    <ciudad>Pamplona</ciudad>
+    <puntos>55</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Celta</nombre>
+    <ciudad>Vigo</ciudad>
+    <puntos>52</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Girona</nombre>
+    <ciudad>Girona</ciudad>
+    <puntos>50</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Getafe</nombre>
+    <ciudad>Getafe</ciudad>
+    <puntos>47</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Espanyol</nombre>
+    <ciudad>Barcelona</ciudad>
+    <puntos>45</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Rayo Vallecano</nombre>
+    <ciudad>Madrid</ciudad>
+    <puntos>44</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Mallorca</nombre>
+    <ciudad>Palma</ciudad>
+    <puntos>42</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Alavés</nombre>
+    <ciudad>Vitoria</ciudad>
+    <puntos>40</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Levante</nombre>
+    <ciudad>Valencia</ciudad>
+    <puntos>38</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Elche</nombre>
+    <ciudad>Elche</ciudad>
+    <puntos>35</puntos>
+  </equipo>
+
+  <equipo>
+    <nombre>Real Oviedo</nombre>
+    <ciudad>Oviedo</ciudad>
+    <puntos>30</puntos>
+  </equipo>
+
+</liga>

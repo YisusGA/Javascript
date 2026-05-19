@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f7a3a;
+    margin: 20px;
+}
+
+header {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 10px #333;
+}
+
+h1 {
+    color: #c40000;
+    margin-bottom: 20px;
+}
+h2 {
+    color: blue;
+    margin-bottom: 5px;
+}
+#subtitulo {
+    font-size: 18px;
+    color: #333;
+}
+
+#equipos {
+    list-style: none;
+    padding: 0;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#equipos li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-left: 8px solid #c40000;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#equipos li:first-child {
+    background-color: #fff3cd;
+    border-left: 8px solid gold;
+    font-weight: bold;
+}
+
+.posicion {
+    display: inline-block;
+    width: 35px;
+    font-weight: bold;
+    color: #1f7a3a;
+}
+
+.puntos {
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: #c40000;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de taller mecánico</title>
+  <link rel="stylesheet" href="taller.css">
+</head>
+<body>
+
+  <h1>Registro de reparaciones</h1>
+
+  <form id="formularioTaller">
+
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" required>
+
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" placeholder="1234ABC" required>
+
+    <label for="vehiculo">Vehículo:</label>
+    <input type="text" id="vehiculo" placeholder="Seat Ibiza" required>
+
+    <label for="averia">Tipo de avería:</label>
+    <select id="averia" required>
+      <option value="">Selecciona una avería</option>
+      <option value="Motor">Motor</option>
+      <option value="Frenos">Frenos</option>
+      <option value="Electricidad">Electricidad</option>
+      <option value="Neumáticos">Neumáticos</option>
+      <option value="Aceite">Aceite</option>
+    </select>
+
+    <label>Prioridad:</label>
+    <div class="grupo-radio">
+      <label>
+        <input type="radio" name="prioridad" value="Baja" required>
+        Baja
+      </label>
+
+      <label>
+        <input type="radio" name="prioridad" value="Media">
+        Media
+      </label>
+
+      <label>
+        <input type="radio" name="prioridad" value="Alta">
+        Alta
+      </label>
+    </div>
+
+    <label for="coste">Coste estimado (€):</label>
+    <input type="number" id="coste" min="0" step="0.01" required>
+
+    <label for="estado">Estado de reparación:</label>
+    <select id="estado" required>
+      <option value="">Selecciona un estado</option>
+      <option value="Pendiente">Pendiente</option>
+      <option value="En reparación">En reparación</option>
+      <option value="Reparado">Reparado</option>
+      <option value="Entregado">Entregado</option>
+    </select>
+
+    <button type="submit">Generar JSON</button>
+  </form>
+
+  <h2>JSON generado</h2>
+  <pre id="salidaJSON"></pre>
+
+  <script src="taller.js"></script>
+</body>
+</html>
