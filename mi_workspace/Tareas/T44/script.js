@@ -62,9 +62,7 @@ function obtenerInvitados(response) {
 }
 
 function parsearJSON(str) {
-    return JSON.parse(str); // Aquí debemos usar JSON.parse(str) y no str.json(), pues el objeto Response ya se recibió
-                            // en el método anterior, el cual le pasa un String a este método. Y un objeto String no tiene
-                            // un método .json()
+    return str.json();
 }
 
 function addInvitados(datos) {
